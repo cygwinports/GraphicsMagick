@@ -1,0 +1,15 @@
+category: Graphics
+requires: cygwin jasper jbigkit lcms libX11_6 libXext6 libbz2_1 libfpx libfreetype26 libpng12 libtiff5 libwmf libxml2
+external-source: GraphicsMagick
+sdesc: "Image processing and vector rendering (runtime library)"
+ldesc: "GraphicsMagick provides a comprehensive collection of utilities,
+programming interfaces, and GUIs, to support image processing and 2D vector
+rendering.
+
+GraphicsMagick is originally based on ImageMagick from ImageMagick Studio
+(which was originally written by John Cristy at Dupont). The goal of
+GraphicsMagick is to provide the highest quality product possible while
+encouraging open and active participation from all interested developers.
+The GraphicsMagick usage license is designed to allow it to be used for any
+application, including proprietary or GPLed applications. Please see the
+file Copyright.txt for the GraphicsMagick licence."

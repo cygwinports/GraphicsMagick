@@ -1,0 +1,335 @@
+GraphicsMagick
+------------------------------------------
+GraphicsMagick provides a comprehensive collection of utilities,
+programming interfaces, and GUIs, to support image processing and 2D vector
+rendering.
+
+GraphicsMagick is originally based on ImageMagick from ImageMagick Studio
+(which was originally written by John Cristy at Dupont). The goal of
+GraphicsMagick is to provide the highest quality product possible while
+encouraging open and active participation from all interested developers.
+The GraphicsMagick usage license is designed to allow it to be used for any
+application, including proprietary or GPLed applications. Please see the
+file Copyright.txt for the GraphicsMagick licence.
+
+Runtime requirements:
+  cygwin-1.5.21-1
+  jasper-1.701.0-1
+  jbigkit-1.5-3
+  lcms-1.14-1
+  libX11_6-1.0.2-1
+  libXext6-1.0.1-1
+  libbz2_1-1.0.3-1
+  libfpx-1.2.0.12-1
+  libfreetype26-2.1.10-1
+  libpng12-1.2.8-2
+  libtiff5-3.8.2-1
+  libwmf-0.2.8.4-1
+  libxml2-2.6.26-1
+  perl-5.8.7-5  (for the perl bindings)
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.21-1
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20060709-1
+  cygport-0.2.5-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.22-1
+  make-3.81-1
+  sed-4.1.5-1
+
+Canonical website:
+  http://www.graphicsmagick.org/
+
+Canonical download:
+  ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/
+  http://prdownloads.sourceforge.net/graphicsmagick/
+
+-------------------------------------------
+
+Build instructions:
+  unpack GraphicsMagick-1.1.7-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./GraphicsMagick-1.1.7-X.cygport all
+
+This will create:
+  /usr/src/GraphicsMagick-1.1.7-X-src.tar.bz2
+  /usr/src/GraphicsMagick-1.1.7-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(GraphicsMagick)
+  /usr/bin/gm.exe
+  /usr/share/GraphicsMagick-1.1.7/Copyright.txt
+  /usr/share/GraphicsMagick-1.1.7/config/log.mgk
+  /usr/share/GraphicsMagick-1.1.7/config/magic.mgk
+  /usr/share/GraphicsMagick-1.1.7/config/modules.mgk
+  /usr/share/GraphicsMagick-1.1.7/images/ball.png
+  /usr/share/GraphicsMagick-1.1.7/images/corbis.png
+  /usr/share/GraphicsMagick-1.1.7/images/examples.jpg
+  /usr/share/GraphicsMagick-1.1.7/images/gm-125x80t.png
+  /usr/share/GraphicsMagick-1.1.7/images/gm-188x120t.png
+  /usr/share/GraphicsMagick-1.1.7/images/gm-282x180t.png
+  /usr/share/GraphicsMagick-1.1.7/images/home.png
+  /usr/share/GraphicsMagick-1.1.7/images/mail.png
+  /usr/share/GraphicsMagick-1.1.7/images/pdfsages.png
+  /usr/share/GraphicsMagick-1.1.7/images/pngnow.png
+  /usr/share/GraphicsMagick-1.1.7/images/right_triangle.png
+  /usr/share/GraphicsMagick-1.1.7/images/right_triangle_option.png
+  /usr/share/GraphicsMagick-1.1.7/index.html
+  /usr/share/GraphicsMagick-1.1.7/www/AUTHORS.html
+  /usr/share/GraphicsMagick-1.1.7/www/Changelog.html
+  /usr/share/GraphicsMagick-1.1.7/www/Copyright.html
+  /usr/share/GraphicsMagick-1.1.7/www/FAQ.html
+  /usr/share/GraphicsMagick-1.1.7/www/GraphicsMagick.html
+  /usr/share/GraphicsMagick-1.1.7/www/INSTALL-mac.html
+  /usr/share/GraphicsMagick-1.1.7/www/INSTALL-unix.html
+  /usr/share/GraphicsMagick-1.1.7/www/INSTALL-vms.html
+  /usr/share/GraphicsMagick-1.1.7/www/INSTALL-windows.html
+  /usr/share/GraphicsMagick-1.1.7/www/ImageMagickObject.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Blob.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Cache.fig
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Cache.png
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Cache.svg
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/ChangeLog.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/CoderInfo.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Color.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Documentation.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Drawable.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Drawable_example_1.png
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Enumerations.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Exception.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/FormatCharacters.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Future.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Geometry.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Image.fig
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Image.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Image.png
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/ImageDesign.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/ImageMagick.png
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Install.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Magick++.png
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Montage.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/NEWS.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/PixelPacket.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/Pixels.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/README.txt
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/STL.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/TypeMetric.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/gm-188x120t.png
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/index.html
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/montage-sample-framed.jpg
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/right_triangle.png
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/thumbnail-anatomy-framed.fig
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/thumbnail-anatomy-framed.jpg
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/thumbnail-anatomy-plain.fig
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/thumbnail-anatomy-plain.jpg
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/thumbnail-sample-framed.jpg
+  /usr/share/GraphicsMagick-1.1.7/www/Magick++/thumbnail-sample-plain.jpg
+  /usr/share/GraphicsMagick-1.1.7/www/NEWS.html
+  /usr/share/GraphicsMagick-1.1.7/www/README.html
+  /usr/share/GraphicsMagick-1.1.7/www/animate.html
+  /usr/share/GraphicsMagick-1.1.7/www/api.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/animate.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/annotate.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/attribute.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/blob.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/cache.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/cache_view.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/color.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/composite.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/constitute.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/decorate.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/deprecate.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/display.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/draw.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/effect.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/enhance.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/error.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/fx.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/image.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/list.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/magick.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/memory.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/monitor.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/montage.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/paint.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/profile.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/quantize.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/registry.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/render.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/resize.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/resource.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/segment.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/shear.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/signature.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/stream.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/transform.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/types.html
+  /usr/share/GraphicsMagick-1.1.7/www/api/widget.html
+  /usr/share/GraphicsMagick-1.1.7/www/body.html
+  /usr/share/GraphicsMagick-1.1.7/www/body.html.rej
+  /usr/share/GraphicsMagick-1.1.7/www/books.html
+  /usr/share/GraphicsMagick-1.1.7/www/color.html
+  /usr/share/GraphicsMagick-1.1.7/www/composite.html
+  /usr/share/GraphicsMagick-1.1.7/www/conjure.html
+  /usr/share/GraphicsMagick-1.1.7/www/contribute.html
+  /usr/share/GraphicsMagick-1.1.7/www/convert.html
+  /usr/share/GraphicsMagick-1.1.7/www/cvs.html
+  /usr/share/GraphicsMagick-1.1.7/www/development.html
+  /usr/share/GraphicsMagick-1.1.7/www/display.html
+  /usr/share/GraphicsMagick-1.1.7/www/download.html
+  /usr/share/GraphicsMagick-1.1.7/www/formats.html
+  /usr/share/GraphicsMagick-1.1.7/www/gm.html
+  /usr/share/GraphicsMagick-1.1.7/www/header.html
+  /usr/share/GraphicsMagick-1.1.7/www/identify.html
+  /usr/share/GraphicsMagick-1.1.7/www/import.html
+  /usr/share/GraphicsMagick-1.1.7/www/index.html
+  /usr/share/GraphicsMagick-1.1.7/www/install.html
+  /usr/share/GraphicsMagick-1.1.7/www/links.html
+  /usr/share/GraphicsMagick-1.1.7/www/magick.css
+  /usr/share/GraphicsMagick-1.1.7/www/miff.html
+  /usr/share/GraphicsMagick-1.1.7/www/mission.html
+  /usr/share/GraphicsMagick-1.1.7/www/mogrify.html
+  /usr/share/GraphicsMagick-1.1.7/www/montage.html
+  /usr/share/GraphicsMagick-1.1.7/www/perl.html
+  /usr/share/GraphicsMagick-1.1.7/www/programming.html
+  /usr/share/GraphicsMagick-1.1.7/www/quantize.html
+  /usr/share/GraphicsMagick-1.1.7/www/smile.c
+  /usr/share/GraphicsMagick-1.1.7/www/tools.html
+  /usr/share/GraphicsMagick-1.1.7/www/utilities.html
+  /usr/share/GraphicsMagick-1.1.7/www/windows.html
+  /usr/share/doc/Cygwin/GraphicsMagick-1.1.7.README
+  /usr/share/doc/GraphicsMagick-1.1.7/AUTHORS
+  /usr/share/doc/GraphicsMagick-1.1.7/COPYRIGHT.txt
+  /usr/share/doc/GraphicsMagick-1.1.7/ChangeLog
+  /usr/share/doc/GraphicsMagick-1.1.7/NEWS
+  /usr/share/doc/GraphicsMagick-1.1.7/TODO.txt
+  /usr/share/man/man1/gm.1.gz
+  /usr/share/man/man4/miff.4.gz
+  /usr/share/man/man5/quantize.5.gz
+
+(libGraphicsMagick1)
+  /usr/bin/cygGraphicsMagick++-1.dll
+  /usr/bin/cygGraphicsMagick-1.dll
+  /usr/bin/cygGraphicsMagickWand-0.dll
+  /usr/lib/GraphicsMagick-1.1.7/config/colors.mgk
+  /usr/lib/GraphicsMagick-1.1.7/config/delegates.mgk
+  /usr/lib/GraphicsMagick-1.1.7/config/type-ghostscript.mgk
+  /usr/lib/GraphicsMagick-1.1.7/config/type-solaris.mgk
+  /usr/lib/GraphicsMagick-1.1.7/config/type-windows.mgk
+  /usr/lib/GraphicsMagick-1.1.7/config/type.mgk
+
+(libGraphicsMagick-devel)
+  /usr/bin/GraphicsMagick++-config
+  /usr/bin/GraphicsMagick-config
+  /usr/bin/GraphicsMagickWand-config
+  /usr/include/GraphicsMagick/Magick++.h
+  /usr/include/GraphicsMagick/Magick++/Blob.h
+  /usr/include/GraphicsMagick/Magick++/CoderInfo.h
+  /usr/include/GraphicsMagick/Magick++/Color.h
+  /usr/include/GraphicsMagick/Magick++/Drawable.h
+  /usr/include/GraphicsMagick/Magick++/Exception.h
+  /usr/include/GraphicsMagick/Magick++/Geometry.h
+  /usr/include/GraphicsMagick/Magick++/Image.h
+  /usr/include/GraphicsMagick/Magick++/Include.h
+  /usr/include/GraphicsMagick/Magick++/Montage.h
+  /usr/include/GraphicsMagick/Magick++/Pixels.h
+  /usr/include/GraphicsMagick/Magick++/STL.h
+  /usr/include/GraphicsMagick/Magick++/TypeMetric.h
+  /usr/include/GraphicsMagick/magick/PreRvIcccm.h
+  /usr/include/GraphicsMagick/magick/api.h
+  /usr/include/GraphicsMagick/magick/attribute.h
+  /usr/include/GraphicsMagick/magick/blob.h
+  /usr/include/GraphicsMagick/magick/cache.h
+  /usr/include/GraphicsMagick/magick/cache_view.h
+  /usr/include/GraphicsMagick/magick/color.h
+  /usr/include/GraphicsMagick/magick/command.h
+  /usr/include/GraphicsMagick/magick/composite.h
+  /usr/include/GraphicsMagick/magick/compress.h
+  /usr/include/GraphicsMagick/magick/constitute.h
+  /usr/include/GraphicsMagick/magick/decorate.h
+  /usr/include/GraphicsMagick/magick/delegate.h
+  /usr/include/GraphicsMagick/magick/deprecate.h
+  /usr/include/GraphicsMagick/magick/draw.h
+  /usr/include/GraphicsMagick/magick/effect.h
+  /usr/include/GraphicsMagick/magick/enhance.h
+  /usr/include/GraphicsMagick/magick/error.h
+  /usr/include/GraphicsMagick/magick/fx.h
+  /usr/include/GraphicsMagick/magick/gem.h
+  /usr/include/GraphicsMagick/magick/image.h
+  /usr/include/GraphicsMagick/magick/list.h
+  /usr/include/GraphicsMagick/magick/log.h
+  /usr/include/GraphicsMagick/magick/magic.h
+  /usr/include/GraphicsMagick/magick/magick.h
+  /usr/include/GraphicsMagick/magick/magick_config.h
+  /usr/include/GraphicsMagick/magick/magick_types.h
+  /usr/include/GraphicsMagick/magick/module.h
+  /usr/include/GraphicsMagick/magick/monitor.h
+  /usr/include/GraphicsMagick/magick/montage.h
+  /usr/include/GraphicsMagick/magick/paint.h
+  /usr/include/GraphicsMagick/magick/profile.h
+  /usr/include/GraphicsMagick/magick/quantize.h
+  /usr/include/GraphicsMagick/magick/registry.h
+  /usr/include/GraphicsMagick/magick/render.h
+  /usr/include/GraphicsMagick/magick/resize.h
+  /usr/include/GraphicsMagick/magick/resource.h
+  /usr/include/GraphicsMagick/magick/shear.h
+  /usr/include/GraphicsMagick/magick/signature.h
+  /usr/include/GraphicsMagick/magick/stream.h
+  /usr/include/GraphicsMagick/magick/symbols.h
+  /usr/include/GraphicsMagick/magick/timer.h
+  /usr/include/GraphicsMagick/magick/transform.h
+  /usr/include/GraphicsMagick/magick/utility.h
+  /usr/include/GraphicsMagick/magick/version.h
+  /usr/include/GraphicsMagick/magick/widget.h
+  /usr/include/GraphicsMagick/magick/xwindow.h
+  /usr/include/GraphicsMagick/wand/drawing_wand.h
+  /usr/include/GraphicsMagick/wand/magick_wand.h
+  /usr/include/GraphicsMagick/wand/pixel_wand.h
+  /usr/include/GraphicsMagick/wand/wand_api.h
+  /usr/lib/libGraphicsMagick++.a
+  /usr/lib/libGraphicsMagick++.dll.a
+  /usr/lib/libGraphicsMagick++.la
+  /usr/lib/libGraphicsMagick.a
+  /usr/lib/libGraphicsMagick.dll.a
+  /usr/lib/libGraphicsMagick.la
+  /usr/lib/libGraphicsMagickWand.a
+  /usr/lib/libGraphicsMagickWand.dll.a
+  /usr/lib/libGraphicsMagickWand.la
+  /usr/lib/pkgconfig/GraphicsMagick++.pc
+  /usr/lib/pkgconfig/GraphicsMagick.pc
+  /usr/lib/pkgconfig/GraphicsMagickWand.pc
+  /usr/share/man/man1/GraphicsMagick++-config.1.gz
+  /usr/share/man/man1/GraphicsMagick-config.1.gz
+  /usr/share/man/man1/GraphicsMagickWand-config.1.gz
+
+(perl-Graphics-Magick)
+  /etc/postinstall/GraphicsMagick.sh
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Graphics/Magick.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Graphics/Magick/.packlist
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Graphics/Magick/Magick.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Graphics/Magick/Magick.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Graphics/Magick/autosplit.ix
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Graphics/Magick/libMagick.dll.a
+  /usr/share/man/man3/Graphics.Magick.3pm.gz
+  /usr/share/perl/cygwin-pods/5.8/GraphicsMagick.pod
+
+------------------
+
+Port Notes:
+
+----- version 1.1.7-1 -----
+Long-overdue version bump; last official release was 1.0.6-1
+by Harold Hunt.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
