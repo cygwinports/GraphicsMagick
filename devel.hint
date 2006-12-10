@@ -1,5 +1,5 @@
 category: Graphics
-requires: cygwin jasper jbigkit lcms libX11 libXext bzip2 libfpx libfreetype2-devel libpng12-devel libtiff-devel libwmf libxml2-devel
+requires: cygwin lcms libX11-devel libXext-devel libbz2-devel libfreetype2-devel libtool
 external-source: GraphicsMagick
 sdesc: "Image processing and vector rendering (development)"
 ldesc: "GraphicsMagick provides a comprehensive collection of utilities,
