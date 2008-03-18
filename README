@@ -30,7 +30,7 @@ Runtime requirements:
   libxml2-2.6.30-1
   zlib-1.2.3-2
 (perl-Graphics-Magick)
-  perl-5.8.8-4
+  perl-5.10.0-3
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -506,22 +506,18 @@ Files included in the binary packages:
   /usr/share/man/man1/GraphicsMagickWand-config.1.gz
 
 (perl-Graphics-Magick)
-  /etc/postinstall/GraphicsMagick.sh
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Graphics/Magick.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Graphics/Magick/.packlist
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Graphics/Magick/Magick.bs
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Graphics/Magick/Magick.dll
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Graphics/Magick/autosplit.ix
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Graphics/Magick/libMagick.dll.a
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Graphics/Magick.pm
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Graphics/Magick/.packlist
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Graphics/Magick/Magick.dll
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Graphics/Magick/autosplit.ix
   /usr/share/man/man3/Graphics.Magick.3pm.gz
-  /usr/share/perl/cygwin-pods/5.8/GraphicsMagick.pod
 
 ------------------
 
 Port Notes:
 
 ----- version 1.1.11-1 -----
-Version bump.
+Version bump.  Perl bindings built for perl-5.10.
 
 ----- version 1.1.10-1 -----
 Version bump.
