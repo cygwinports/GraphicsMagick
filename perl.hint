@@ -1,5 +1,5 @@
 category: Graphics Perl
-requires: cygwin libGraphicsMagick1 perl
+requires: cygwin libGraphicsMagick2 perl
 external-source: GraphicsMagick
 sdesc: "Image processing and vector rendering (Perl bindings)"
 ldesc: "GraphicsMagick provides a comprehensive collection of utilities,
