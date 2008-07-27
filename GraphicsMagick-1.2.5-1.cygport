@@ -1,0 +1,48 @@
+inherit perl
+
+DESCRIPTION="GraphicsMagick image processing suite"
+HOMEPAGE="http://www.graphicsmagick.org/"
+SRC_URI="mirror://sourceforge/graphicsmagick/${P}.tar.lzma"
+
+PKG_NAMES="${PN} lib${PN}2 lib${PN}-devel perl-Graphics-Magick"
+PKG_HINTS="setup lib devel perl"
+PKG_CONTENTS[0]="--exclude=man3 --exclude=*-config* usr/bin/gm.exe usr/share/doc/ usr/share/man/"
+PKG_CONTENTS[1]="usr/bin/*.dll usr/lib/${P}/ usr/share/${P}"
+PKG_CONTENTS[2]='usr/bin/*-config usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/man/man1/*-config.*'
+PKG_CONTENTS[3]="${PERL_VENDORLIB#/} usr/share/man/man3/"
+
+DIFF_EXCLUDES="ltdl magick_config.h* Makefile.PL Magick.pm"
+
+src_compile() {
+	cd ${S}
+	cygautoreconf
+	cd ${B}
+	cygconf \
+		--enable-shared --disable-static --with-modules \
+		--disable-openmp \
+		--with-ltdl-include=/usr/include --with-ltdl-lib=/usr/lib \
+		--with-fontpath=/usr/share/fonts \
+		--with-fpx \
+		--with-gs-font-dir=/usr/share/ghostscript/fonts \
+		--with-quantum-depth=16 \
+		--without-dps
+	cygmake
+}
+
+src_check() {
+	cd ${B}
+	make check
+}
+
+src_install() {
+	cd ${B}
+	cyginstall \
+		PERL_MAKE_OPTIONS='INSTALLDIRS=vendor' \
+		pkgdocdir=/usr/share/doc/${P}
+
+	dodir /usr/share/man/man3
+	${PERL} "-MExtUtils::Command::MM" -e pod2man "--" \
+	    --section=3 --perm_rw=644 PerlMagick/Magick.pm \
+		${D}/usr/share/man/man3/Graphics.Magick.3pm
+	perl_postinst
+}
