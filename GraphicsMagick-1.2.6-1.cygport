@@ -3,13 +3,16 @@ inherit perl
 DESCRIPTION="GraphicsMagick image processing suite"
 HOMEPAGE="http://www.graphicsmagick.org/"
 SRC_URI="mirror://sourceforge/graphicsmagick/${P}.tar.lzma"
+PATCH_URI="1.2.5-no-undefined.patch"
 
 PKG_NAMES="${PN} lib${PN}2 lib${PN}-devel perl-Graphics-Magick"
-PKG_HINTS="setup lib devel perl"
-PKG_CONTENTS[0]="--exclude=man3 --exclude=*-config* usr/bin/gm.exe usr/share/doc/ usr/share/man/"
-PKG_CONTENTS[1]="usr/bin/*.dll usr/lib/${P}/ usr/share/${P}"
-PKG_CONTENTS[2]='usr/bin/*-config usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/man/man1/*-config.*'
-PKG_CONTENTS[3]="${PERL_VENDORLIB#/} usr/share/man/man3/"
+declare \
+${PN}_CONTENTS="--exclude=man3 --exclude=*-config* usr/bin/gm.exe usr/share/doc/ usr/share/man/"
+declare \
+lib${PN}2_CONTENTS="usr/bin/cyg${PN}*-2.dll usr/bin/cyg${PN}Wand-1.dll usr/lib/${P}/ usr/share/${P}/"
+declare \
+lib${PN}_devel_CONTENTS='usr/bin/*-config usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/man/man1/*-config.*'
+perl_Graphics_Magick_CONTENTS="${PERL_VENDORLIB#/} usr/share/man/man3/"
 
 DIFF_EXCLUDES="ltdl magick_config.h* Makefile.PL Magick.pm"
 
