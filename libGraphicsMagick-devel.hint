@@ -1,5 +1,5 @@
 category: Graphics
-requires: cygwin libGraphicsMagick2 libX11-devel libXext-devel libbz2-devel libfreetype2-devel liblcms-devel libtool
+requires: cygwin libGraphicsMagick3 libX11-devel libXext-devel libbz2-devel libfreetype2-devel liblcms-devel libtool
 external-source: GraphicsMagick
 sdesc: "Image processing and vector rendering (development)"
 ldesc: "GraphicsMagick provides a comprehensive collection of utilities,

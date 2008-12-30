@@ -5,13 +5,13 @@ HOMEPAGE="http://www.graphicsmagick.org/"
 SRC_URI="mirror://sourceforge/graphicsmagick/${P}.tar.lzma"
 PATCH_URI="1.2.5-no-undefined.patch"
 
-PKG_NAMES="${PN} lib${PN}2 lib${PN}-devel perl-Graphics-Magick"
-declare \
-${PN}_CONTENTS="--exclude=man3 --exclude=*-config* usr/bin/gm.exe usr/share/doc/ usr/share/man/"
-declare \
-lib${PN}2_CONTENTS="usr/bin/cyg${PN}*-2.dll usr/bin/cyg${PN}Wand-1.dll usr/lib/${P}/ usr/share/${P}/"
-declare \
-lib${PN}_devel_CONTENTS='usr/bin/*-config usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/man/man1/*-config.*'
+PKG_NAMES="${PN} lib${PN}3 lib${PN}-devel perl-Graphics-Magick"
+GraphicsMagick_CONTENTS="--exclude=man3 --exclude=*-config* usr/bin/gm.exe
+                         usr/share/doc/ usr/share/man/"
+libGraphicsMagick3_CONTENTS="usr/bin/cyg${PN}*-3.dll usr/bin/cyg${PN}Wand-2.dll
+                             usr/lib/${P}/ usr/share/${P}/"
+libGraphicsMagick_devel_CONTENTS="usr/bin/*-config usr/include/ usr/lib/lib*
+                                  usr/lib/pkgconfig/ usr/share/man/man1/*-config.*"
 perl_Graphics_Magick_CONTENTS="${PERL_VENDORLIB#/} usr/share/man/man3/"
 
 DIFF_EXCLUDES="ltdl magick_config.h* Makefile.PL Magick.pm"
