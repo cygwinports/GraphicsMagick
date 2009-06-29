@@ -1,5 +1,5 @@
 category: Graphics
-requires: cygwin libGraphicsMagick3
+requires: libGraphicsMagick3
 sdesc: "Image processing and vector rendering utilities"
 ldesc: "GraphicsMagick provides a comprehensive collection of utilities,
 programming interfaces, and GUIs, to support image processing and 2D vector
